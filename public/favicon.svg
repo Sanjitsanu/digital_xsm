@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="purple-ribbon" x1="22%" y1="18%" x2="80%" y2="88%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="35%" stop-color="#4F46E5" />
+      <stop offset="70%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+    <linearGradient id="cyan-ribbon" x1="88%" y1="12%" x2="18%" y2="86%">
+      <stop offset="0%" stop-color="#00E5FF" />
+      <stop offset="25%" stop-color="#00B4D8" />
+      <stop offset="65%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#1E40AF" />
+    </linearGradient>
+    <linearGradient id="wing-grad" x1="60%" y1="10%" x2="95%" y2="28%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="fold-shadow" x1="45%" y1="40%" x2="55%" y2="60%">
+      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left to Right Purple/Indigo Ribbon -->
+  <path
+    d="M24 20C18 20 14 26 17 32L39 60C43 65 50 67 56 63L76 48C81 44 80 37 74 34L45 21C38 18 30 20 24 20Z"
+    fill="url(#purple-ribbon)"
+  />
+  <path
+    d="M48 50L73 80C78 86 87 85 90 79C93 73 89 65 83 60L60 38C54 42 50 46 48 50Z"
+    fill="url(#purple-ribbon)"
+  />
+
+  <!-- Right to Left Cyan/Azure Ribbon -->
+  <path
+    d="M93 14L78 19L60 44L72 56L94 28C96 25 97 19 93 14Z"
+    fill="url(#wing-grad)"
+  />
+  <path
+    d="M80 18L50 54L22 80C16 85 10 82 8 76C6 70 10 63 15 58L42 32L62 16C68 12 75 14 80 18Z"
+    fill="url(#cyan-ribbon)"
+  />
+  <path
+    d="M10 74C8 79 12 85 18 85C24 85 30 81 35 76L55 52L44 42L18 66C14 70 11 71 10 74Z"
+    fill="url(#cyan-ribbon)"
+  />
+
+  <!-- 3D Fold Crease -->
+  <path
+    d="M42 42C48 48 54 53 58 57C54 62 48 64 43 59C38 54 38 47 42 42Z"
+    fill="url(#fold-shadow)"
+  />
+
+  <!-- Specular Sheen -->
+  <path
+    d="M74 20L58 38C55 35 56 31 60 27L72 17C73 17 74 19 74 20Z"
+    fill="#FFFFFF"
+    fill-opacity="0.45"
+  />
+</svg>

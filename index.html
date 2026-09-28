@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Theme Flash Prevention: Initialize theme before DOM renders -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('digitalx-theme');
+          var theme = saved;
+          if (theme !== 'light' && theme !== 'dark') {
+            theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          }
+          document.documentElement.setAttribute('data-theme', theme);
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          } else {
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <title>Digital X — AI, Marketing &amp; Web Development</title>
+    <meta name="description" content="Digital X Multi Services Pvt. Ltd. provides AI-powered digital solutions, website design, branding, social media, digital marketing, education and creative services for businesses and individuals." />
+    
+    <!-- OpenGraph Social Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Digital X Multi Services Pvt. Ltd." />
+    <meta property="og:title" content="Digital X — AI, Marketing &amp; Web Development" />
+    <meta property="og:description" content="Digital X Multi Services Pvt. Ltd. provides AI-powered digital solutions, website design, branding, social media, digital marketing, education and creative services for businesses and individuals." />
+    <meta property="og:locale" content="en_IN" />
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Digital X Multi Services Pvt. Ltd. — AI, Marketing &amp; Web Development" />
+    <meta name="twitter:description" content="Digital X provides AI-powered digital solutions, website design, branding, social media, digital marketing, education and creative services for businesses and individuals." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Digital X Multi Services Pvt. Ltd.",
+      "alternateName": "Digital X",
+      "url": "https://thedigitalx.in/",
+      "telephone": "+917970884193",
+      "email": "thedigitalxofficial@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "patna",
+        "addressLocality": "",
+        "addressRegion": "Bihar",
+        "postalCode": "800001",
+        "addressCountry": "IN"
+      },
+      "description": "Digital X provides AI-powered digital solutions, website design, branding, social media, digital marketing, education and creative services for businesses and individuals.",
+      "sameAs": [
+        "https://instagram.com/digitalxmultiservice",
+        "https://thedigitalx.in/"
+      ],
+      "priceRange": "₹₹",
+      "openingHours": "Mo-Sa 09:00-19:00"
+    }
+    </script>
+  </head>
+  <body class="bg-[#071126] text-slate-100 antialiased font-sans selection:bg-[#1769FF] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
